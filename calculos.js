@@ -5,7 +5,7 @@ function calcularDescuento(precio, porcentaje) {
 
     const ahorro = precio * porcentaje / 100;
 
-    const total = precio - ahorro;
+    const total = precio + ahorro;
 
     return {
         ahorro: ahorro,
