@@ -1,0 +1,115 @@
+
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f8;
+    margin: 0;
+    padding: 40px 20px;
+    color: #202c3c;
+}
+
+/* CONTENEDOR */
+
+main {
+    background-color: white;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* TITULOS */
+
+h1 {
+    text-align: center;
+    font-size: 27px;
+}
+
+main > p {
+    text-align: center;
+    color: #667085;
+    line-height: 1.5;
+}
+
+/* FORMULARIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 7px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* BOTON */
+
+button {
+    background-color: #3267d5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #2455b5;
+}
+
+/* RESULTADOS */
+
+#resultado {
+    background-color: #eff6ff;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+#resultado h2 {
+    font-size: 20px;
+}
+
+#resultado p {
+    color: #667085;
+}
+
+#resultado h3 {
+    color: #2455c3;
+    font-size: 23px;
+}
+
+/* CELULARES */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    main {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
