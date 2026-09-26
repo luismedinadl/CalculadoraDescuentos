@@ -13,19 +13,6 @@ const ahorroTexto = document.getElementById("ahorro");
 const totalTexto = document.getElementById("total");
 
 
-// Función para calcular el descuento.
-function calcularDescuento(precio, porcentaje) {
-
-    const ahorro = precio * porcentaje / 100;
-
-    const total = precio - ahorro;
-
-    return {
-        ahorro: ahorro,
-        total: total
-    };
-}
-
 
 // Cuando el usuario presiona el botón.
 formulario.addEventListener("submit", function(evento) {
