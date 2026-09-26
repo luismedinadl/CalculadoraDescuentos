@@ -1,0 +1,11 @@
+
+{
+  "name": "calculadora-descuentos",
+  "version": "1.0.0",
+  "description": "Calculadora de descuentos con pruebas automaticas",
+  "private": true,
+  "scripts": {
+    "check": "node --check calculos.js && node --check app.js && node --check tests/calculos.test.js",
+    "test": "node --test"
+  }
+}
