@@ -1,0 +1,30 @@
+
+name: Pruebas de la calculadora
+
+# Ejecutar cuando subamos cambios
+on: [push, pull_request]
+
+jobs:
+  pruebas:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Obtener nuestro proyecto
+      - name: Obtener codigo
+        uses: actions/checkout@v4
+
+      # Preparar Node.js
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Revisar el codigo
+      - name: Comprobar codigo
+        run: npm run check
+
+      # Ejecutar las pruebas
+      - name: Ejecutar pruebas
+        run: npm test
