@@ -53,3 +53,10 @@ test("Descuento del cero por ciento", function() {
     assert.equal(resultado.total, 300);
 
 });
+
+// Nuevos descuentos de la versión 1.1.0
+for (const [porcentaje, ahorro, total] of [[5, 50, 950], [15, 150, 850], [25, 250, 750], [75, 750, 250]]) {
+    test(`Descuento del ${porcentaje} por ciento`, function() {
+        assert.deepEqual(calcularDescuento(1000, porcentaje), { ahorro, total });
+    });
+}
